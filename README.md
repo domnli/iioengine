@@ -1,30 +1,55 @@
-iioengine
-=========
+[![JS.ORG](https://img.shields.io/badge/js.org-iio-888888.svg?style=flat-square)](http://js.org)
 
-The iio Engine is a JavaScript framework that streamlines the development of Canvas based HTML5 applications. The core platform is open source, and free to use and extend for any purpose.
+iio.js
+====== 
 
-This repo contains the most recent version of the iio Engine framework merged with some useful community contributions.
+iio.js is a javascript library that speeds the creation and deployment of HTML5 Canvas applications. This repo contains all published copies and working editions of iio.js.
 
-Branches with new functionality will be merged only if they can run all of the demo applications included in this repo without error. Versioned updates may alter or extend the usage of previously merged functions, but conflicts will be determinately avoided.
+iio.js was formarly known as 'iio Engine'. The last version of iio Engine, v1.2.2, included Box2D compatability and tutorials. Visit iioEngine.com for the old versions source code, documentation, tutorials, and demos.
 
-Formal documentation for new functions will be added once a stable, versioned core script has been finalized and released. In the meantime, see the contributor's github notes, the included demos, or the iio Forums for tips on cutting-edge feature usage.
+## links
+Homepage: http://iioinc.github.io/iio.js
 
-Homepage: http://iioengine.com
+Twitter: @iioinc
 
-Documentation: http://iioengine.com/docs/iio-basics
+## loading iio.js
+You can load the minified engine from a local folder or the iio Engine URL:
 
-Demos: http://iioengine.com/demos
+	<script type="text/javascript" src="https://raw.githubusercontent.com/iioinc/iio.js/master/build/iio.min.js"></script>
 
-Tutorials: http://iioengine.com/tutorials
+iio Engine has a debugging version with extra features:
 
-Forums: http://iioengine.com/forums
+	<script type="text/javascript" src="https://raw.githubusercontent.com/iioinc/iio.js/master/build/iio_debug.js"></script>
 
-Twitter: @iioEngine
+## building Source Files
+To edit source files, use Grunt to re-build. Grunt depends on nodejs and npm.
 
+### installing nodejs and grunt
+If you have brew you can install node easily
 
-The iio Engine is licensed under the BSD 2-clause Open Source license
+    brew install node
 
-Copyright (c) 2013, Sebastian Bierman-Lytle
+Then install the Grunt CLI.
+
+    npm install -g grunt-cli
+
+Install dependencies with npm.
+
+    npm install
+
+You can now run Grunt to build and minify iio.js
+
+    grunt
+
+Include the debug flag to build the debugging versions
+
+    grunt debug
+
+## license
+
+iio.js is licensed under the BSD 2-clause Open Source license
+
+Copyright (c) 2014, Sebastian Bierman-Lytle
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, 
